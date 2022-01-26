@@ -1,7 +1,7 @@
 {
     "app-id": "com.kavilgroup.gestimator",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "40",
+    "runtime-version": "41",
     "sdk": "org.gnome.Sdk",
     "command": "gestimator.py",
     "finish-args": [
@@ -91,8 +91,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/manuvarkey/GEstimator.git",
-                    "tag": "v2.2",
-                    "commit": "00e84074c155332eb1f370d91629f9ffdef1a020"
+                    "tag": "v2.3",
+                    "commit": "ee4dd95322de749ccfbd4859be3eb721557f9d25"
                 }
             ]
         }
