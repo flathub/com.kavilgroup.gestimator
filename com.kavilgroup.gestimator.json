@@ -91,8 +91,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/manuvarkey/GEstimator.git",
-                    "tag": "v2.4",
-                    "commit": "6c6af23e8e9cf98ef5d1da2f840a01eb163f9daa"
+                    "tag": "v2.5",
+                    "commit": "bba3c3884f7f38d9a63a3e3ca078a9a94bf910a0"
                 }
             ]
         }
