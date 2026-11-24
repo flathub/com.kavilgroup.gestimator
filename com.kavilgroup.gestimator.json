@@ -13,8 +13,7 @@
         "--socket=fallback-x11",
         "--device=dri",
         "--share=ipc",
-        "--share=network",
-        "--filesystem=home"
+        "--share=network"
     ],
     "modules": [
         {
@@ -52,7 +51,7 @@
                 "cd modern && npm ci --no-audit --no-fund",
                 "cd modern && npx vite build",
                 "install -Dm755 packaging/flathub/gestimator-backend modern/src-tauri/binaries/gestimator-backend-$(rustc -vV | sed -n 's/^host: //p')",
-                "cd modern/src-tauri && cargo build --offline --release --features custom-protocol",
+                "cd modern/src-tauri && cargo build --offline --release --no-default-features --features custom-protocol,flatpak-portal",
                 "install -Dm755 modern/src-tauri/target/release/gestimator -t ${FLATPAK_DEST}/bin/",
                 "install -Dm755 packaging/flathub/gestimator-backend -t ${FLATPAK_DEST}/bin/",
                 "mkdir -p ${FLATPAK_DEST}/share/gestimator/modern",
@@ -72,8 +71,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/manuvarkey/GEstimator.git",
-                    "tag": "v3.0.1",
-                    "commit": "13a44273138c9815a6366caf274244eb7cb7b596",
+                    "tag": "v3.1.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
